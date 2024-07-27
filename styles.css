@@ -69,3 +69,7 @@ button.number {
 button.decimal {
     background-color: lightgray;
 }
+
+button.clear {
+    background-color: darkgray;
+}
