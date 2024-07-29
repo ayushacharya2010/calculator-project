@@ -78,14 +78,14 @@ function calculate() {
                 break;
             case '/':
                 if (secondNum === 0) {
-                    result = "Idiot";
+                    result = "Who knows";
                 } else {
                     result = divideNums(firstNum, secondNum);
                 }
                 break;
         }
         let outputText = document.querySelector("h1.output-text");
-        outputText.textContent = result;
+        outputText.textContent = Math.round((result + Number.EPSILON) * 10000) / 10000;
     
         currentNumber = "";
         firstNum = result;
